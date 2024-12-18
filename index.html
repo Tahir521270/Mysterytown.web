@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery Town RP</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0f0f14;
+            color: #fff;
+            text-align: center;
+        }
+        .logo {
+            margin-top: 30px;
+        }
+        .logo img {
+            width: 150px;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 2.5rem;
+        }
+        .button {
+            background-color: #3daeff;
+            color: white;
+            padding: 15px;
+            width: 80%;
+            max-width: 300px;
+            margin: 10px auto;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: #4cbaff;
+        }
+        .section {
+            display: none;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #222;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 500px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            document.getElementById("store").style.display = "none";
+            document.getElementById("admins").style.display = "none";
+            document.getElementById(sectionId).style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <!-- الشعار -->
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+
+    <!-- عنوان الموقع -->
+    <h1>Mystery Town RP</h1>
+
+    <!-- الأزرار -->
+    <div class="button" onclick="showSection('store')">المتجر</div>
+    <div class="button" onclick="showSection('admins')">مسؤولي السيرفر</div>
+
+    <!-- محتويات الأقسام -->
+    <div id="store" class="section">
+        <h2>المتجر</h2>
+        <p>قريبًا سيتم إضافة منتجات خاصة بسيرفر Mystery Town RP.</p>
+    </div>
+
+    <div id="admins" class="section">
+        <h2>مسؤولي السيرفر</h2>
+        <p><strong>المدير العام:</strong> Alaa & Ninga</p>
+        <p><strong>نائب المدير:</strong> Colombia & Tahir</p>
+    </div>
+</body>
+</html>
