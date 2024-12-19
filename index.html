@@ -1,111 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mystery Town RP</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #fff;
-            text-align: center;
-        }
-
-        .logo img {
-            width: 300px;
-            margin: 20px auto;
-        }
-
-        .nav-buttons {
-            margin: 20px 0;
-        }
-
-        .nav-buttons button {
-            padding: 10px 20px;
-            margin: 5px;
-            font-size: 1em;
-            border: none;
-            border-radius: 5px;
-            background-color: #ff9900;
-            color: #121212;
-            cursor: pointer;
-        }
-
-        .nav-buttons button:hover {
-            background-color: #e68a00;
-        }
-
-        .section {
-            display: none;
-            margin-top: 20px;
-        }
-
-        .section.active {
-            display: block;
-        }
-
-        footer {
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #888;
-        }
-    </style>
-    <script>
-        function showSection(sectionId) {
-            const sections = document.querySelectorAll('.section');
-            sections.forEach(section => {
-                section.classList.remove('active');
-            });
-            document.getElementById(sectionId).classList.add('active');
-        }
-    </script>
-</head>
-<body>
-    <div class="logo">
-        <img src="https://via.placeholder.com/300x150.png?text=Mystery+Town+RP" alt="Mystery Town RP Logo">
-    </div>
-
-    <div class="nav-buttons">
-        <button onclick="showSection('intro')">تعريف السيرفر</button>
-        <button onclick="showSection('admins')">المسؤولون</button>
-        <button onclick="showSection('products')">المنتجات</button>
-        <button onclick="showSection('discord')">Discord</button>
-    </div>
-
-    <div id="intro" class="section active">
-        <h2>تعريف السيرفر</h2>
-        <p><strong>ماهو سيرفر MYSTRY TOWN؟</strong></p>
-        <p>
-            سيرفر تأسس سنة 2023 شهر 5 يوم 27 بواسطة علاء ونينجا 🫡 من اقوى سيرفرات التي مرة على سامب لن يعرفه إلا القدماء في اللعبة.
-            كان السيرفر RP بنسبة 80% لوجود الوايت ليست أيامها.
-        </p>
-        <p>
-            <strong>لماذا تم تسمية السيرفر باسم MYSTRY TOWN؟</strong>
-            هاذا الأسم يعكس المدينة الجديدة باللغة العربية التي تتيح لك فرصة لتكوين حياة جديدة وتجربة أشياء ممتعة وجديدة في السيرفر.
-        </p>
-    </div>
-
-    <div id="admins" class="section">
-        <h2>المسؤولون</h2>
-        <p><strong>مدير عام:</strong> Alaa & Ninga</p>
-        <p><strong>نائب المدير:</strong> Colombia & Tahir</p>
-    </div>
-
-    <div id="products" class="section">
-        <h2>المنتجات</h2>
-        <p>قريباً...</p>
-    </div>
-
-    <div id="discord" class="section">
-        <h2>Discord</h2>
-        <p>انضم إلى السيرفر الخاص بنا: <a href="https://discord.gg/NC3Vh3Xd" target="_blank">اضغط هنا</a></p>
-    </div>
-
-    <footer>
-        &copy; 2023 Mystery Town RP
-    </footer>
-</body>
-</html>
